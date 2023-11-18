@@ -3,14 +3,18 @@ html {
 }
 
 body {
-    background-color: azure;
+    background-color: rgb(143, 148, 148);
     font-family: 'Ubuntu' sans-serif;
 }
 
 /* working on header*/
 header {
-    background-color: #f8f8f8;
+    background-color: #f1efed;
     padding: 10px 20px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 /* styles for navigation*/
@@ -79,4 +83,30 @@ header {
 
 .menu-toggle.active .hamburger:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+}
+
+.hero {
+    position: relative;
+}
+.hero video{
+    width: 100%;
+}
+
+.hero h1{
+    position: absolute;
+    align-items: center;
+    left: 35%;
+    top: 5%;
+    color:darkgreen ;
+    width: 30%;
+}
+.about {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto;
+    padding-top: 20px; /* Adjust spacing as needed */
+    text-align: justify;
+    color: #333;
+    position: relative;
+    z-index: 1; 
+    top: 80%;
 }
