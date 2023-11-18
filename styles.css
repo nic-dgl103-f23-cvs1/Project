@@ -110,3 +110,42 @@ header {
     z-index: 1; 
     top: 80%;
 }
+/* Styling for the services section */
+.services {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.services article {
+    margin-bottom: 30px;
+}
+
+.services article h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.services article p {
+    margin-bottom: 10px;
+}
+
+.services ul {
+    padding-left: 10%;
+}
+
+.services li {
+    margin-bottom: 5px;
+}
+
+.services a {
+    text-decoration: none;
+    color:#333;
+}
+
