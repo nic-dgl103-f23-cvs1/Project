@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole Cahoon CPA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:ital@1&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <script>
+        // JavaScript for toggling the mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('change', function () {
+            if (this.checked) {
+                navLinks.classList.add('active');
+            } else {
+                navLinks.classList.remove('active');
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="hamburger-menu"></label>
+            <div class="logo">
+                <img src="images/cropped-NC_logo_INC_white_June_2016-03.png" alt="company logo" width="40%">
+            </div>
+            <h1>Welcome to the Nicole Cahoon Chartered Professional Accountant</h1>
+            <ul class="nav-links">
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="services.html" target="_blank">Services</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="contact.html" target="_blank">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/picture.png" alt="company image" width="100%">
+        </section>
+        <!-- Other sections -->
+    </main>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+</body>
+
+</html>
