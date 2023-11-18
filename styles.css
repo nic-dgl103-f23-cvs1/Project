@@ -22,3 +22,7 @@ header {
 
 }
 /*styling for logo */
+.logo img {
+    max-width: 100%;
+}
+/* styles for navigation links */
