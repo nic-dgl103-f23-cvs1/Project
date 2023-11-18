@@ -21,8 +21,30 @@ header {
     justify-content: space-between;
 
 }
+
 /*styling for logo */
 .logo img {
     max-width: 100%;
 }
+
 /* styles for navigation links */
+.nav-links {
+    display: none;
+    list-style: none;
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Humburger menu*/
