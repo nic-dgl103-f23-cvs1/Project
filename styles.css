@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: rgba(203, 194, 14, 0.367);
+    background-color: #ababab;
     font-family: 'Ubuntu' sans-serif;
 }
 
@@ -45,11 +45,12 @@ header {
 
 .nav-links li {
     margin-bottom: 10px;
+
 }
 
 .nav-links a {
     text-decoration: none;
-    color: black;
+    color: darkred;
     font-size: 2.4rem;
 }
 
@@ -115,6 +116,7 @@ header {
 
 .about h2 {
     font-size: 3rem;
+    color: darkred;
 
 }
 
@@ -162,7 +164,7 @@ header {
 
 .services a {
     text-decoration: none;
-    color: black;
+    color: darkgreen;
 }
 
 .contact {
@@ -179,6 +181,7 @@ header {
 .contact h2 {
     font-size: 3rem;
     margin-bottom: 20px;
+    color: darkgreen;
 }
 
 .contact p {
@@ -275,17 +278,15 @@ footer {
     .nav-links {
         display: flex;
         list-style: none;
-        padding: 0;
     }
 
     .nav-links li {
         margin-right: 20px;
-        /* Add some space between the list items */
     }
 
     .nav-links a {
         text-decoration: none;
-        color: black;
+        color: darkred;
         font-weight: bold;
         font-size: 4rem;
     }
@@ -308,6 +309,7 @@ footer {
 
     .services h2 {
         font-size: 5rem;
+        color: darkred;
     }
 
     .services article h3 {
@@ -324,6 +326,7 @@ footer {
 
     .contact h2 {
         font-size: 5rem;
+        color: darkgreen;
     }
 
     .contact p {
@@ -357,23 +360,82 @@ footer {
     }
 
 }
+
 /* Media query for larger desktop screens */
 @media (min-width: 1200px) {
     header {
         padding: 15px 30px;
     }
-    .navbar{
+
+    .navbar {
         display: block;
         align-items: center;
     }
+
     .nav-links {
         display: flex;
         list-style: none;
         padding: 0;
-    }   
+    }
+
+    .nav-links li {
+        margin-right: 40px;
+        /* Add some space between the list items */
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 4rem;
+        color: red;
+    }
+    .logo img {
+        width: 50%;
+    }
     .menu-toggle {
         display: none;
     }
 
-    
+    .hero h1 {
+        font-size: 8rem;
+    }
+
+    .about h2 {
+        font-size: 4rem;
+        color: rgb(222, 12, 12);
+    }
+
+    .about p {
+        font-size: 3.2rem;
+        text-align: center;
+    }
+
+    .services h2 {
+        font-size: 4rem;
+        margin-left: 5%;
+    }
+
+    .services article h3 {
+        font-size: 3.5rem;
+        margin-left: 5%;
+    }
+
+    .services article p {
+        font-size: 2rem;
+        margin-left: 5%;
+    }
+
+    .services ul {
+        font-size: 2rem;
+        margin-left: 5%;
+    }
+
+    .contact {
+        margin-left: 5%;
+    }
+
+    .contact p {
+        font-size: 2rem;
+    }
 }
