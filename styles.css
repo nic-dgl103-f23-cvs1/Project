@@ -115,7 +115,7 @@ header {
 
 .about h2 {
     font-size: 3rem;
-    
+
 }
 
 .about p {
@@ -180,7 +180,8 @@ header {
     font-size: 3rem;
     margin-bottom: 20px;
 }
-.contact p{
+
+.contact p {
     font-size: 2rem;
 }
 
@@ -316,33 +317,63 @@ footer {
     .services article p {
         font-size: 4rem;
     }
-    .services ul{
+
+    .services ul {
         font-size: 3.5rem;
     }
-    .contact h2{
+
+    .contact h2 {
+        font-size: 5rem;
+    }
+
+    .contact p {
         font-size: 4rem;
     }
-    .contact p{
+
+    article h3 {
+        font-size: 5rem;
+    }
+
+    article p {
+        font-size: 2rem;
+    }
+
+    form {
+        font-size: 5rem;
+    }
+
+    label {
+        font-size: 5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 4.6rem;
+    }
+
+    footer {
         font-size: 4rem;
     }
-    article h3{
-font-size: 5rem;   
- }
- article p{
-    font-size: 2rem;
- }
- form{
-    font-size: 5rem;
- }
- label{
-    font-size: 5rem;
- }
- input[type="text"],
- input[type="email"],
- textarea {
-    font-size: 4.6rem;
- }
- footer{
-    font-size: 4rem;
- }
+
+}
+/* Media query for larger desktop screens */
+@media (min-width: 1200px) {
+    header {
+        padding: 15px 30px;
+    }
+    .navbar{
+        display: block;
+        align-items: center;
+    }
+    .nav-links {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }   
+    .menu-toggle {
+        display: none;
+    }
+
+    
 }
