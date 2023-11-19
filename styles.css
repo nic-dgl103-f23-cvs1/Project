@@ -3,13 +3,13 @@ html {
 }
 
 body {
-    background-color: rgb(143, 148, 148);
+    background-color: rgba(203, 194, 14, 0.367);
     font-family: 'Ubuntu' sans-serif;
 }
 
 /* working on header*/
 header {
-    background-color: #f1efed;
+    background-color: rgba(203, 194, 14, 0.367);
     padding: 10px 20px;
     width: 100%;
     background-size: cover;
@@ -28,7 +28,8 @@ header {
 
 /*styling for logo */
 .logo img {
-    max-width: 100%;
+    width: 60%;
+    margin-left: 10%;
 }
 
 /* styles for navigation links */
@@ -48,7 +49,8 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: black;
+    font-size: 2.4rem;
 }
 
 /* Humburger menu*/
@@ -68,7 +70,7 @@ header {
 .hamburger {
     width: 100%;
     height: 3px;
-    background-color: #333;
+    background-color: black;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -88,39 +90,48 @@ header {
 .hero {
     position: relative;
 }
-.hero video{
+
+.hero video {
     width: 100%;
 }
 
-.hero h1{
+.hero h1 {
     position: absolute;
     align-items: center;
     left: 35%;
     top: 5%;
-    color:darkgreen ;
+    color: rgba(0, 255, 166, 0.551);
     width: 30%;
+    font-size: 2rem;
 }
+
 .about {
-    width: 80%; /* Adjust width as needed */
-    margin: 0 auto;
-    padding-top: 20px; /* Adjust spacing as needed */
-    text-align: justify;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
     color: #333;
-    position: relative;
-    z-index: 1; 
-    top: 80%;
 }
+
+.about h2 {
+    font-size: 3rem;
+    
+}
+
+.about p {
+    font-size: 2rem;
+    color: black;
+}
+
 /* Styling for the services section */
 .services {
     padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
 }
 
 .services h2 {
-    font-size: 2em;
+    font-size: 3rem;
     margin-bottom: 20px;
-    color: #333;
+    color: black;
 }
 
 .services article {
@@ -128,16 +139,21 @@ header {
 }
 
 .services article h3 {
-    font-size: 1.5em;
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
 .services article p {
     margin-bottom: 10px;
+    font-size: 2.2rem;
+    color: black;
+
 }
 
 .services ul {
     padding-left: 10%;
+    font-size: 2rem;
+    color: black;
 }
 
 .services li {
@@ -146,42 +162,52 @@ header {
 
 .services a {
     text-decoration: none;
-    color:#333;
-}
-.contact {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    color: #333;
+    color: black;
 }
 
-h2 {
-    font-size: 2em;
+.contact {
+    max-width: 800px;
+    padding: 20px;
+    color: black;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact h2 {
+    font-size: 3rem;
     margin-bottom: 20px;
+}
+.contact p{
+    font-size: 2rem;
 }
 
 article {
     margin-bottom: 15px;
 }
 
-h3 {
-    font-size: 1.2em;
+article h3 {
+    font-size: 2.5rem;
     margin-bottom: 5px;
 }
 
-p {
+article p {
     margin: 0;
+    font-size: 2rem;
 }
 
 /* Form styles */
 form {
     margin-top: 20px;
+    font-size: 3rem;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
+    font-size: 2.4rem;
 }
 
 input[type="text"],
@@ -193,6 +219,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 2.2rem;
 }
 
 input[type="submit"] {
@@ -213,13 +240,109 @@ input[type="submit"]:focus {
     outline: none;
 }
 
-/* Responsiveness */
-@media (max-width: 600px) {
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        width: calc(100% - 20px);
-    }
+.contact img {
+    margin: 15px;
+    padding: 10px;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+    padding: 20px;
+    font-size: 2.5rem;
+    color: #333;
 
+}
+
+/* Media queries for tablet (720px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    .navbar {
+        display: block;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 50%;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin-right: 20px;
+        /* Add some space between the list items */
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 4rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .about h2 {
+        font-size: 5rem;
+    }
+
+    .about p {
+        font-size: 3.5rem;
+    }
+
+    .services h2 {
+        font-size: 5rem;
+    }
+
+    .services article h3 {
+        font-size: 4.8rem;
+    }
+
+    .services article p {
+        font-size: 4rem;
+    }
+    .services ul{
+        font-size: 3.5rem;
+    }
+    .contact h2{
+        font-size: 4rem;
+    }
+    .contact p{
+        font-size: 4rem;
+    }
+    article h3{
+font-size: 5rem;   
+ }
+ article p{
+    font-size: 2rem;
+ }
+ form{
+    font-size: 5rem;
+ }
+ label{
+    font-size: 5rem;
+ }
+ input[type="text"],
+ input[type="email"],
+ textarea {
+    font-size: 4.6rem;
+ }
+ footer{
+    font-size: 4rem;
+ }
+}
