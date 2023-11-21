@@ -70,6 +70,9 @@ header {
     color: white;
     font-size: 2rem;
 }
+.nav-links a:hover{
+    background-color: yellowgreen;
+}
 
 /* Humburger menu*/
 /* Styles for the hamburger menu */
@@ -188,8 +191,8 @@ header {
 .services-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-    grid-gap: 20px; /* Adjust the gap between items */
-    margin-top: 50px;
+    grid-gap: 10px; /* Adjust the gap between items */
+    margin-top: 1px;
 }
 .service-wrapper {
     margin-top: 50px;
@@ -202,7 +205,7 @@ header {
 }
 
 .service-wrapper h3 {
-    font-size: 0.5rem;
+    font-size: 2.5rem;
     width: 20%;
     cursor: pointer;
     border: 1px solid black;
@@ -234,7 +237,7 @@ header {
 }
 
 .service-wrapper-one h3 {
-    font-size: 0.5rem;
+    font-size: 2.5rem;
     width: 20%;
     cursor: pointer;
     border: 1px solid black;
@@ -266,7 +269,7 @@ header {
 }
 
 .service-wrapper-two h3 {
-    font-size: 0.5rem;
+    font-size: 2.5rem;
     width: 20%;
     cursor: pointer;
     border: 1px solid black;
@@ -293,7 +296,7 @@ header {
     color: black;
 }
 .services a:hover{
-    background-color: #be1d1d;
+    background-color: yellowgreen;
 }
 
 .contact {
@@ -493,15 +496,18 @@ footer {
 
 /* Media query for larger desktop screens */
 @media (min-width: 1200px) {
-    header {
-        padding: 15px 30px;
-    }
+    
 
     .navbar {
         display: block;
         align-items: center;
     }
-
+    .containwraper a {
+        margin-left: 93%;
+    }
+    .navbar img {
+        width: 30%;
+    }
     .nav-links {
         display: flex;
         list-style: none;
@@ -521,9 +527,7 @@ footer {
 
     }
 
-    .navbar img {
-        width: 30%;
-    }
+   
 
     .menu-toggle {
         display: none;
@@ -545,30 +549,116 @@ footer {
         margin-right: 100px;
     }
 
-    .containwraper a {
-        margin-left: 93%;
-    }
+    
 
     .services h2 {
         font-size: 4rem;
         margin-left: 5%;
     }
-
-    .services article h3 {
-        font-size: 3.5rem;
-        margin-left: 5%;
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+        grid-gap: 20px; /* Adjust the gap between items */
+        margin-top: 50px;
     }
-
-    .services article p {
-        font-size: 2rem;
-        margin-left: 5%;
+    .service-wrapper {
+        margin-top: 50px;
+        background-image: url('images/NMAS.png');
+        background-repeat: no-repeat;
+        padding: 40%;
+        text-align: center;
+        background-position: center;
+        color:white;
     }
-
-    .services ul {
-        font-size: 2rem;
-        margin-left: 5%;
+    
+    .service-wrapper h3 {
+        font-size: 2.5rem;
+        width: 20%;
+        cursor: pointer;
+        border: 1px solid black;
+        padding: 5px;
+        transition: all 0.3s ease;
+        position: absolute;
+        left: 0%;
+        background-color: black;
+    
     }
-
+    
+    
+    .service-wrapper h3:hover {
+        background-color: #be1d1d;
+    }
+    
+    .service-wrapper h3:active {
+        transform: translateY(1px);
+    }
+    
+    .service-wrapper-one {
+        margin-top: 50px;
+        background-image: url('images/Accounting.jpeg');
+        background-repeat: no-repeat;
+        padding: 40%;
+        text-align: center;
+        background-position: center;
+        color:white;
+    }
+    
+    .service-wrapper-one h3 {
+        font-size: 2.5rem;
+        width: 20%;
+        cursor: pointer;
+        border: 1px solid black;
+        padding: 5px;
+        transition: all 0.3s ease;
+        position: absolute;
+        left: 35%;
+        background-color: black;
+    
+    
+    }
+    
+    
+    .service-wrapper-one h3:hover {
+        background-color: #be1d1d;
+    }
+    
+    .service-wrapper-one h3:active {
+        transform: translateY(1px);
+    }
+    .service-wrapper-two {
+        margin-top: 50px;
+        background-image: url('images/tax.png');
+        background-repeat: no-repeat;
+        padding: 40%;
+        text-align: center;
+        background-position: center;
+        color:white;
+    }
+    
+    .service-wrapper-two h3 {
+        font-size: 2.5rem;
+        width: 20%;
+        cursor: pointer;
+        border: 1px solid black;
+        padding: 5px;
+        transition: all 0.3s ease;
+        position: absolute;
+        left: 70%;
+        background-color: black;
+    
+    
+    }
+    
+    
+    .service-wrapper-two h3:hover {
+        background-color: #be1d1d;
+    }
+    
+    .service-wrapper-two h3:active {
+        transform: translateY(1px);
+    }
+    
+    
     .contact {
         margin-left: 5%;
     }
