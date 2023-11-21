@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:ital@1&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"     >
+
+    <script>function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <img src="images/cropped-NC_logo_INC_white_June_2016-03.png" alt="company logo">
+
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links" id="menu">
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="services.html" target="_blank">Services</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="contact.html" target="_blank"> Contact Us</a></li>
+            </ul>
+
+
+
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section class="hero">
+
+            <video autoplay muted loop playsinline>
+                <source src="images\Accountant - Accounting Service Promotional Video.mkv" type="video/mp4">
+            </video>
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+            </div>
+            </section>
+            <section class="contact">
+                <h2><a href="contact.html">Contact Us</a></h2>
+                <article>
+                    <h3><a href="https://mail.google.com/mail">Email:nicole@nicolecahoon.com</a></h3>
+                </article>
+                <article>
+                    <h3>Phone</h3>
+                    <p>+1 250-8711-121</p>
+                </article>
+                <article>
+                    <h3>Address</h3>
+                    <p>123 Main Street, Courtenay, Comox</p>
+                </article>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.4558460250582!2d-124.99089599999999!3d49.683388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881387ee557a91%3A0xf9df7ea74d2c4403!2sNicole%20Cahoon%2C%20Chartered%20Professional%20Accountant!5e0!3m2!1sen!2sca!4v1700549810622!5m2!1sen!2sca"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Click on given icon and Find us On social Media Platform. </p>
+                <a href="https://www.facebook.com/nicolecahooninc"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/nicolecahooncpa?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                <p>Book Your appointment by filling out the form below:</p>
+    
+                <form action="submit_form.php">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="eg-Umesh"><br>
+    
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="eg-Pathak"><br>
+    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" value="eg-pathakum277@gmail.com"><br>
+    
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message"></textarea><br>
+    
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+    </main>
+    <footer>
+        <!-- Footer content -->
+        <p><b>Note: This is a fictional website that was designed and coded as an educational exercise. It is not
+                intended to
+                be seen outside of the class environment. None of the content and images were approved by the business
+                owner.</b></p>
+
+    </footer>
+</body>
+
+</html>
