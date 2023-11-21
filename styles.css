@@ -290,7 +290,10 @@ header {
 
 .services a {
     text-decoration: none;
-    color: darkgreen;
+    color: black;
+}
+.services a:hover{
+    background-color: #be1d1d;
 }
 
 .contact {
