@@ -11,7 +11,6 @@ body {
 header {
     background-color: rgba(203, 194, 14, 0.367);
     padding: 10px 20px;
-    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -25,20 +24,24 @@ header {
     justify-content: space-between;
 
 }
-.contentwraper a{
+.containwraper a{
     border: 1px solid ;
-    background-color:black;
+    background-color:#45a049;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
     color: white;
     text-decoration: none;
-    
+    border-radius: 10px;
+    margin-left: 90%;
+}
+.containwraper a:hover{
+    background-color:black;
+
 }
 
 /*styling for logo */
-.logo img {
-    width: 60%;
-    margin-left: 10%;
+.navbar img {
+    width: 40%;
 }
 
 /* styles for navigation links */
