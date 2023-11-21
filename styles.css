@@ -168,7 +168,6 @@ header {
 
 /* Styling for the services section */
 .services {
-    padding: 20px;
     text-align: center;
 }
 
@@ -186,25 +185,32 @@ header {
     color: black;
     margin-right: 5%;
 }
-
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-gap: 20px; /* Adjust the gap between items */
+    margin-top: 50px;
+}
 .service-wrapper {
     margin-top: 50px;
     background-image: url('images/NMAS.png');
     background-repeat: no-repeat;
-    padding: 15%;
+    padding: 40%;
     text-align: center;
     background-position: center;
+    color:white;
 }
 
 .service-wrapper h3 {
-    font-size: 1.5rem;
-    width: 40%;
+    font-size: 0.5rem;
+    width: 20%;
     cursor: pointer;
     border: 1px solid black;
     padding: 5px;
     transition: all 0.3s ease;
     position: absolute;
-    left: 30%;
+    left: 0%;
+    background-color: black;
 
 }
 
@@ -217,21 +223,69 @@ header {
     transform: translateY(1px);
 }
 
-.services article p {
-    margin-bottom: 10px;
-    font-size: 2.2rem;
-    color: black;
+.service-wrapper-one {
+    margin-top: 50px;
+    background-image: url('images/Accounting.jpeg');
+    background-repeat: no-repeat;
+    padding: 40%;
+    text-align: center;
+    background-position: center;
+    color:white;
+}
+
+.service-wrapper-one h3 {
+    font-size: 0.5rem;
+    width: 20%;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 5px;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 35%;
+    background-color: black;
+
 
 }
 
-.services ul {
-    padding-left: 10%;
-    font-size: 2rem;
-    color: black;
+
+.service-wrapper-one h3:hover {
+    background-color: #be1d1d;
 }
 
-.services li {
-    margin-bottom: 5px;
+.service-wrapper-one h3:active {
+    transform: translateY(1px);
+}
+.service-wrapper-two {
+    margin-top: 50px;
+    background-image: url('images/tax.png');
+    background-repeat: no-repeat;
+    padding: 40%;
+    text-align: center;
+    background-position: center;
+    color:white;
+}
+
+.service-wrapper-two h3 {
+    font-size: 0.5rem;
+    width: 20%;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 5px;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 70%;
+    background-color: black;
+
+
+}
+
+
+.service-wrapper-two h3:hover {
+    background-color: #be1d1d;
+}
+
+.service-wrapper-two h3:active {
+    transform: translateY(1px);
 }
 
 .services a {
