@@ -458,6 +458,16 @@ footer {
 .container-wrapper a:hover {
     background-color: black;
 }
+/* for about page*/
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
 
 
 /* Media queries for tablet (720px) */
