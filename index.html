@@ -15,13 +15,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"     >
 
     <script>
-    function toggleMenu() {
+        function toggleMenu() {
             const menu = document.getElementById('menu');
             menu.classList.toggle('active');
         }
         function navigateTo(url) {
-    window.location.href = url;
-}
+            window.location.href = url;
+        }
 
     </script>
 </head>
@@ -38,10 +38,10 @@
                 <span class="hamburger"></span>
             </button>
             <ul class="nav-links" id="menu">
-                <li><a href="index.html" target="_blank">Home</a></li>
-                <li><a href="services.html" target="_blank">Services</a></li>
-                <li><a href="about.html" target="_blank">About</a></li>
-                <li><a href="contact.html" target="_blank"> Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html"> Contact Us</a></li>
             </ul>
 
 
@@ -53,6 +53,7 @@
 
     <main>
         <section class="hero">
+            <img src="images\.jpg" alt="Accounting">
 
             <video autoplay muted loop playsinline>
                 <source src="images\Accountant - Accounting Service Promotional Video.mkv" type="video/mp4">
@@ -69,7 +70,7 @@
                 <p>Nicole Cahoon, CPA provides small and mid-sized companies in Courtenay, Comox, Cumberland, and the
                     surrounding municipalities in the Comox Valley with a comprehensive variety of accounting and
                     bookkeeping services.</p>
-                    <img src="images\picture.png" alt="photo" width="40%" >
+                <img src="images\picture.png" alt="photo" width="40%">
 
                 <p>At Nicole Cahoon, CPA, we're dedicated to providing a range of services to satisfy our customers'
                     needs while establishing an atmosphere that promotes both professional and personal development. Our
@@ -83,62 +84,80 @@
             <div class="service-content">
                 <h2><a href="services.html">Why Choose Us?</a></h2>
                 <img src="images\confuse" alt="choose us" width="20%">
+
             </div>
-            <div class="services-container">
-                <article class="service-wrapper">
-                    <h3 onclick="navigateTo('services.html')"> Accounting Services</h3>
-                </article>
-            
-                <article class="service-wrapper-one">
-                    <h3 onclick="navigateTo('services.html')">Business Consulting Services</h3>
-                </article>
-            
-                <article class="service-wrapper-two">
-                    <h3 onclick="navigateTo('services.html')">Tax Services</h3>
-                </article>
+            <div class="service-content">
+                <p>At Nicole Cahoon CPA, we stand out for our commitment to tailored accounting solutions that fit your
+                    business needs. Our comprehensive accounting services ensure precision and efficiency in financial
+                    management, from meticulous bookkeeping to intricate financial analysis. We offer expert business
+                    consulting aimed at enhancing your company's performance, encompassing strategic planning and
+                    process improvement to drive your business toward success. Additionally, our tax services cover
+                    planning and compliance, providing expertise to navigate tax regulations effectively and optimize
+                    your tax situation while ensuring full compliance and minimizing liabilities.</p>
             </div>
-            
-            
         </section>
-        <section class="contact">
-            <h2><a href="contact.html">Contact Us</a></h2>
-            <article>
-                <h3><a href="https://mail.google.com/mail">Email:nicole@nicolecahoon.com</a></h3>
+        <section class="services-container">
+            <article class="service-wrapper">
+                <h3 onclick="navigateTo('services.html')"> Accounting Services</h3>
             </article>
-            <article>
-                <h3>Phone</h3>
-                <p>+1 250-8711-121</p>
+
+            <article class="service-wrapper-one">
+                <h3 onclick="navigateTo('services.html')">Business Consulting Services</h3>
             </article>
-            <article>
-                <h3>Address</h3>
-                <p>123 Main Street, Courtenay, Comox</p>
+
+            <article class="service-wrapper-two">
+                <h3 onclick="navigateTo('services.html')">Tax Services</h3>
             </article>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.4558460250582!2d-124.99089599999999!3d49.683388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881387ee557a91%3A0xf9df7ea74d2c4403!2sNicole%20Cahoon%2C%20Chartered%20Professional%20Accountant!5e0!3m2!1sen!2sca!4v1700549810622!5m2!1sen!2sca"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p>Click on given icon and Find us On social Media Platform. </p>
-            <a href="https://www.facebook.com/nicolecahooninc"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://instagram.com/nicolecahooncpa?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
-
-
-            </a>
-            <p>Book Your appointment click on appointment button below:</p>
-            <div class="containwraper"><a href="contact.html" target="_blank">Book Appointment</a></div>
-
         </section>
+
+
     </main>
+    <!-- Footer content -->
+
     <footer>
-        <!-- Footer content -->
-       
-        
-        <p><b>Note: This is a fictional website that was designed and coded as an educational exercise. It is not
-                intended to
-                be seen outside of the class environment. None of the content and images were approved by the business
-                owner.</b></p>
+        <section class="contacts">
+            <div class="contacts-details">
+                <h2>Contact Us</h2>
+                <article>
+                    <h3><a href="mailto:nicole@nicolecahoon.com">Email: nicole@nicolecahoon.com</a></h3>
+                </article>
+                <article>
+                    <h3>Phone</h3>
+                    <p>+1 250-8711-121</p>
+                </article>
+                <article>
+                    <h3>Address</h3>
+                    <p>123 Main Street, Courtenay, Comox</p>
+                </article>
+                <p>Connect with us on social media:</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/nicolecahooninc"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/nicolecahooncpa?igshid=OGQ5ZDc2ODk2ZA=="><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p>Book your appointment:</p>
+                <div class="appointment">
+                    <a href="contact.html">Book Appointment</a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.4558460250582!2d-124.99089599999999!3d49.683388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881387ee557a91%3A0xf9df7ea74d2c4403!2sNicole%20Cahoon%2C%20Chartered%20Professional%20Accountant!5e0!3m2!1sen!2sca!4v1700549810622!5m2!1sen!2sca"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
+        </section>
 
+        <div class="disclaimer">
+            <p><b>Note: This is a fictional website that was designed and coded as an educational exercise. It is not
+                    intended to
+                    be seen outside of the class environment. None of the content and images were approved by the
+                    business
+                    owner.</b></p>
+        </div>
     </footer>
+
 
 </body>
 
