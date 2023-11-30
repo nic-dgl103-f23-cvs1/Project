@@ -134,7 +134,7 @@ p{
     width: 70%;
     font-size: 4rem;
     background-color: black;
-    opacity: 60%;
+    opacity: 50%;
 }
 
 .about {
@@ -143,6 +143,7 @@ p{
     background-repeat: no-repeat;
     text-align: center;
     color: #333;
+    border-bottom: 2px solid white;
 
 }
 .about img{
@@ -151,7 +152,7 @@ p{
 
 .about h2 {
     font-size: 3rem;
-    color: darkred;
+    color: white;
 
 }
 
@@ -179,13 +180,14 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 40px;
 
 }
 
 .service-content h2 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: black;
+    color: white;
     margin-right: 5%;
 }
 .service-content p{
@@ -196,10 +198,13 @@ p{
     margin: auto;
     display: block;
     text-align: center;
+    border-top: 2px solid white;
+
 }
 .main-Service h2{
     font-size: 3rem;
     margin-top: 40px;
+    color: white;
 }
 .main-Service p{
     font-size: 2rem;
@@ -307,7 +312,7 @@ p{
 
 .services a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .services a:hover{
     background-color: yellowgreen;
@@ -459,8 +464,8 @@ margin-top: 40px;
 .disclaimer {
     font-size: 2rem;
     margin-top: 20px;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
 }
 .map{
     margin-top: 20px;
@@ -485,14 +490,15 @@ margin-top: 40px;
 
 /* Individual service */
 .service-one th {
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 8px;
     font-size: 2rem;
     text-align: center;
+    color: white;
 }
 
 .service-one tr {
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 /* Service links */
@@ -506,7 +512,7 @@ margin-top: 40px;
 
 
 .service-one td {
-    border: 1px solid black;
+    border: 1px solid white;
     text-align: left;
     padding: 8px;
 font-size: 1rem;
@@ -626,7 +632,7 @@ display: none;
         position: absolute;
         color: #fff;
         background-color:black;
-        opacity: 70%;
+        opacity: 40%;
         top: 15%;
 
     }
@@ -656,8 +662,9 @@ display: none;
         max-width: 1170px;
         margin: auto;
     }
-.services h2 {
+.service-content h2 {
         font-size: 4rem;
+        color: white;
        
     }
     .main-Service{
@@ -665,10 +672,14 @@ display: none;
         margin: auto;
         display: block;
         text-align: center;
+        border-top:2px solid white ;
+        margin-top: 50px;
+
     }
     .main-Service h2{
         font-size: 3rem;
         margin-top: 40px;
+        color: white;
     }
     .main-Service p{
         font-size: 2rem;
@@ -950,29 +961,30 @@ display: none;
      
      /* Individual service */
      .service-one th {
-         border: 1px solid black;
+         border: 1px solid white;
          padding: 8px;
          font-size: 3.5rem;
          text-align: center;
+         color: white;
      }
      
      .service-one tr {
-         border: 1px solid black;
+         border: 1px solid white;
      }
      
      /* Service links */
      .service-one  a {
          text-decoration: none;
-         color:black;
          font-size: 18px;
          padding: 10px;
          font-size: 3rem;
          text-align: center;
+         color: black;
      }
      
      
      .service-one td {
-         border: 1px solid black;
+         border: 1px solid white;
          text-align:center;
          padding: 8px;
      font-size: 2rem;
