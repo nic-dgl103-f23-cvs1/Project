@@ -4,7 +4,7 @@ html {
 
 body {
     background-color:lightslategray;
-    font-family: 'Ubuntu' sans-serif;
+
 }
 
 /* working on header*/
@@ -15,7 +15,15 @@ header {
 
 
 }
+/* using two font styles*/
+h1, h2, h3 {
+    font-family: 'Ubuntu' Arial, Helvetica, sans-serif;
 
+}
+p{
+    font-family: 'Lato', sans-serif;
+
+}
 /* styles for navigation*/
 /* working on navbar */
 .navbar {
@@ -120,11 +128,13 @@ header {
 .hero h1 {
     position: absolute;
     align-items: center;
-    left: 35%;
-    top: 5%;
-    color:black;
-    width: 30%;
-    font-size: 3rem;
+    left: 18%;
+    top: 3%;
+    color:white;
+    width: 70%;
+    font-size: 4rem;
+    background-color: black;
+    opacity: 60%;
 }
 
 .about {
@@ -136,7 +146,7 @@ header {
 
 }
 .about img{
-    width: 40rem;
+    width: 80%;
 }
 
 .about h2 {
@@ -416,10 +426,6 @@ margin-top: 40px;
     color: black;
 }
 
-.map{
-    margin-top: 80px;
-    margin-right: 50px;
-}
 .contacts-details p {
     margin-bottom: 15px;
     margin-top: 15px;
@@ -456,14 +462,15 @@ margin-top: 40px;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
 }
-
+.map{
+    margin-top: 20px;
+    margin-right:10rem;
+    display: flex;
+}
 /* for services page*/
 /* Section containing services */
 .services-wrapper {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+   display: flex;
     text-align: center;
     margin-top: 20px;
     max-width: 1170px;
@@ -471,57 +478,38 @@ margin-top: 40px;
     
 }
 .service-one li{
-    list-style: circle;
- font-size: 16px;
- text-align: left;
- margin-left: 40%;
+    border-collapse: collapse;
+    width: 100%;
 
 }
 
 /* Individual service */
-.service-one {
-    background-color: black;
-    padding: 20px;
-    border-radius: 8px;
-    color: aliceblue;
-
+.service-one th {
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 2rem;
+    text-align: center;
 }
 
-/* Service titles */
-.services-wrapper h3 {
-    font-size: 18px;
-    margin-bottom: 40px;
+.service-one tr {
+    border: 1px solid black;
 }
 
 /* Service links */
 .service-one  a {
     text-decoration: none;
-    color:white;
-    border: 2px solid red;
-    border-radius: 3px;
+    color:black;
     font-size: 18px;
-    padding: 5px;
-}
-.service-one a:hover{
-    background-color:gray;
-    color: black;
+    padding: 10px;
+    font-size: 2rem;
 }
 
-/* Service description */
-.services-wrapper p {
-    font-size: 16px;
-    margin-bottom: 15px;
-}
 
-/* Service lists */
-.services-wrapper ul {
-    list-style: none;
-    text-align: center;
-}
-
-/* Service list items */
-.services-wrapper li {
-    margin-bottom: 5px;
+.service-one td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+font-size: 1rem;
 }
 .coint{
     text-align: center;
@@ -631,14 +619,15 @@ display: none;
         display: inline-block;
     }
     .hero-content h1 {
-        font-size: 8rem;
-        width: 50%;
+        font-size: 7rem;
+        width: 40%;
         text-align: center;
-        margin-left: -10%;
+        margin-left: 10%;
         position: absolute;
         color: #fff;
         background-color:black;
         opacity: 70%;
+        top: 15%;
 
     }
     .about h2 {
@@ -708,7 +697,7 @@ display: none;
         cursor: pointer;
         border: 1px solid black;
         padding: 5px;
-        transition: all 0.3s ease;
+        transition: all 3s ease;
         position: absolute;
         left: 14%;
         background-color: black;
@@ -720,7 +709,7 @@ display: none;
     
     .service-wrapper h3:hover {
         background-color: #be1d1d;
-        font-size: 4rem;
+        font-size: 3rem;
     }
    
     
@@ -740,11 +729,11 @@ display: none;
         cursor: pointer;
         border: 1px solid black;
         padding: 5px;
-        transition: all 0.3s ease;
         position: absolute;
         left: 39%;
         background-color: black;
         border-radius: 10px;
+        transition: all 3s ease;
 
     
     
@@ -774,12 +763,12 @@ display: none;
         cursor: pointer;
         border: 1px solid black;
         padding: 5px;
-        transition: all 0.3s ease;
         position: absolute;
         left: 65%;
         background-color: black;
         border-radius: 10px;
-    
+        transition: all 3s ease;
+
     
     }
     
@@ -880,7 +869,10 @@ display: none;
     .appointment a:hover {
         background-color: black;
     }
-    
+    .map{
+        margin-top: 80px;
+        margin-right: 50px;
+    }
   
 
     /* contact us page----
@@ -940,6 +932,50 @@ display: none;
         color: silver;
         opacity: 70%;
     }
-    
+    /*for service page*/
+    .services-wrapper {
+        display: flex;
+         padding: 20px;
+         text-align: center;
+         margin-top: 20px;
+         max-width: 1170px;
+         margin: auto;
+         
+     }
+     .service-one li{
+         border-collapse: collapse;
+         width: 100%;
+     
+     }
+     
+     /* Individual service */
+     .service-one th {
+         border: 1px solid black;
+         padding: 8px;
+         font-size: 3.5rem;
+         text-align: center;
+     }
+     
+     .service-one tr {
+         border: 1px solid black;
+     }
+     
+     /* Service links */
+     .service-one  a {
+         text-decoration: none;
+         color:black;
+         font-size: 18px;
+         padding: 10px;
+         font-size: 3rem;
+         text-align: center;
+     }
+     
+     
+     .service-one td {
+         border: 1px solid black;
+         text-align:center;
+         padding: 8px;
+     font-size: 2rem;
+     }
     
 }
