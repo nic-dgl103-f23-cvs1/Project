@@ -4,14 +4,21 @@ html {
 
 body {
     background-color: lightslategray;
-margin: 0 px;
+    margin: 0px;
+    padding: 0px;
+   
 }
 
 /* working on header*/
+
 header {
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
+    max-width: 1170px;
+    margin: auto;
+
+   
 
 
 }
@@ -20,7 +27,7 @@ header {
 h1,
 h2,
 h3 {
-    font-family: 'Ubuntu' Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu' ,sans-serif;
 
 }
 
@@ -123,6 +130,8 @@ p {
 
 .hero {
     position: relative;
+    max-width: 1170px;
+    margin: auto;
 
 }
 
@@ -158,6 +167,7 @@ p {
     max-width: 1170px;
     margin: auto;
     text-align: center;
+
 }
 
 .about img {
@@ -431,8 +441,9 @@ footer {
 }
 
 footer img {
-    width: 95%;
-    margin-top: 20px;
+    width: 60%;
+    margin-top: 30px;
+margin-left: 65px;
 }
 
 .contacts {
@@ -506,7 +517,6 @@ footer img {
 
 .map {
     margin-top: 20px;
-    margin-right: 10rem;
     display: flex;
 }
 
@@ -623,7 +633,7 @@ footer img {
 
 
 /* Media query for larger desktop screens */
-@media (min-width: 1200px) {
+@media (min-width: 1170px) {
 
 
     .navbar {
@@ -691,8 +701,8 @@ footer img {
     .about p {
         font-size: 1.5rem;
         text-align: center;
-margin-top: 20px;
-margin-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .about {
@@ -761,13 +771,13 @@ margin-bottom: 20px;
 
     .service-wrapper h3 {
         font-size: 2.5rem;
-        width: 20%;
+        width: fit-content;
         cursor: pointer;
         border: 1px solid black;
         padding: 5px;
         transition: all 3s ease;
-        position: absolute;
-        left: 14%;
+        position:relative;
+        left: 1%;
         background-color: black;
         border-radius: 10px;
 
@@ -793,12 +803,12 @@ margin-bottom: 20px;
 
     .service-wrapper-one h3 {
         font-size: 2.5rem;
-        width: 20%;
+        width:fit-content;
         cursor: pointer;
         border: 1px solid black;
         padding: 5px;
-        position: absolute;
-        left: 39%;
+        position: relative;
+        left: 3%;
         background-color: black;
         border-radius: 10px;
         transition: all 3s ease;
@@ -814,6 +824,8 @@ margin-bottom: 20px;
 
     .service-wrapper-one h3:active {
         transform: translateY(0px);
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    touch-action: cross-slide-x;
     }
 
     .service-wrapper-two {
@@ -828,12 +840,12 @@ margin-bottom: 20px;
 
     .service-wrapper-two h3 {
         font-size: 2.5rem;
-        width: 20%;
+        width: fit-content;
         cursor: pointer;
         border: 1px solid black;
         padding: 5px;
-        position: absolute;
-        left: 65%;
+        position: relative;
+        left: 1%;
         background-color: black;
         border-radius: 10px;
         transition: all 3s ease;
@@ -888,7 +900,7 @@ margin-bottom: 20px;
 
     footer img {
         margin-top: 20px;
-        width: 100%;
+        width: 50%;
     }
 
     .contacts {
