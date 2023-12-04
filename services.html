@@ -14,31 +14,34 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"     >
 
-    <script>function toggleMenu() {
+    <script>
+    function toggleMenu() {
             const menu = document.getElementById('menu');
             menu.classList.toggle('active');
         }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-
             <img src="images/cropped-NC_logo_INC_white_June_2016-03.png" alt="company logo">
             <div class="link-wrapper">
-                <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                </button>
+                <a class="toggle" onclick="toggleMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
                 <ul class="nav-links" id="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">Our Team</a></li>
-                    <li><a href="contact.html"> Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
+        </nav>
 
 
 

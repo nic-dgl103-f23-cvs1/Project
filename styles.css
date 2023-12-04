@@ -40,17 +40,12 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
-
-
-/*styling for logo */
 .navbar img {
     width: 40%;
 }
 
-/* styles for navigation links */
 .nav-links {
     display: none;
     list-style: none;
@@ -63,7 +58,6 @@ p {
 
 .nav-links li {
     margin-bottom: 10px;
-
 }
 
 .nav-links a {
@@ -75,9 +69,13 @@ p {
 .nav-links a:hover {
     background-color: yellowgreen;
 }
-
-/* Humburger menu*/
-/* Styles for the hamburger menu */
+.link-wrapper a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: -40px;
+}
+.toggle i{
+font-size: 24px;}
 .menu-toggle {
     background: none;
     border: none;
@@ -89,7 +87,6 @@ p {
     flex-direction: column;
     justify-content: space-between;
 }
-
 .fa-facebook {
     font-size: 4rem;
     margin-left: 4rem;
@@ -132,6 +129,7 @@ p {
 
 .hero img {
     width: 100%;
+    display: block;
 }
 
 .hero video {
@@ -642,7 +640,7 @@ header{
     }
 
     .nav-links li {
-        margin-right: auto;
+        margin-right:  40px;;
         /* Add some space between the list items */
     }
 
@@ -650,15 +648,15 @@ header{
         text-decoration: none;
         color: white;
         font-size: 2rem;
-        margin-left: 50px;
+        margin-left: 40px;
 
     }
 
+.toggle i{
+    display: none;
+}
 
-
-    .menu-toggle {
-        display: none;
-    }
+   
 .hero{
     max-width: 1170px;
     margin: auto;
@@ -680,7 +678,7 @@ header{
         color: #fff;
         background-color: black;
         opacity: 70%;
-        top: 15%; 
+        top: 50%; 
         left: 20%;
 
     }
