@@ -33,12 +33,12 @@ img[data-src] {
   img[data-src].loaded {
     opacity: 1; /* Fade in images when loaded */
   }
-  @font-face {
-    font-family: 'Ubuntu';
-    src: url('path/to/your/font.woff2') format('woff2'),
-         url('path/to/your/font.woff') format('woff');
-    font-display: swap;
-  }  
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('path/to/your/font.woff2') format('woff2'),
+       url('path/to/your/font.woff') format('woff');
+  font-display: swap;
+}  
 
 
 /* styles for navigation*/
