@@ -23,6 +23,22 @@
         function navigateTo(url) {
             window.location.href = url;
         }
+        // Function to shuffle elements
+function shuffleElements(container) {
+  for (var i = container.children.length; i >= 0; i--) {
+    container.appendChild(container.children[Math.random() * i | 0]);
+  }
+}
+
+// Call the shuffle function when the page loads
+window.onload = function() {
+  var container = document.querySelector('.services-container');
+  shuffleElements(container);
+  setInterval(function() {
+  shuffleElements(container);
+}, 3000); 
+}
+
 
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"

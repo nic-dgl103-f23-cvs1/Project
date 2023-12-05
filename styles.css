@@ -609,12 +609,25 @@ margin-left: 65px;
 }
 
 
+/* Initial styling for the image */
 .card-wrapper img {
     width: 65%;
-}
+  }
+  
+  /* Keyframes for rotation animation */
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg) scaleX(1); /* Initial rotation and flip */
+    }
+    to {
+      transform: rotate(20deg) scaleX(1); /* Continuous rotation and flip */
+    }
+  }
+  
 .card-wrapper h2 {
     font-size: 4rem;
     color: darkred;
+    animation: rotateAnimation 8s linear infinite; /* Rotate continuously */
 }
 
 .card-wrapper:hover {
