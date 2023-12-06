@@ -126,7 +126,7 @@ img[data-src] {
 
 .fa-instagram {
     font-size: 4rem;
-    margin-left: 4.5rem rem;
+    margin-left: 4.5rem;
     color: red;
     text-align: center;
 }
@@ -228,7 +228,7 @@ img[data-src] {
 .main-Service {
     display: block;
     text-align: center;
-    border-top: 2px solid white;
+    border-top: 2px solid black;
 
 }
 
@@ -291,7 +291,7 @@ img[data-src] {
     font-size: 3rem;
     width: 40%;
     cursor: pointer;
-    border: 1px solid black;
+    border: 1px solid white;
     position: absolute;
     left: 38%;
     background-color: black;
@@ -319,7 +319,7 @@ img[data-src] {
     font-size: 3rem;
     width: 40%;
     cursor: pointer;
-    border: 1px solid black;
+    border: 1px solid white;
     position: absolute;
     left: 40%;
     background-color: black;
@@ -583,7 +583,7 @@ margin-left: 65px;
 
 .card {
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+    grid-template-columns: repeat( minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
     text-align: center;
