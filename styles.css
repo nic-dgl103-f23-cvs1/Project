@@ -1,0 +1,972 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: lightslategray;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;  
+}
+
+/* working on header*/
+
+header {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* using two font styles*/
+h1,
+h2,
+h3 {
+    font-family: 'Ubuntu' ,sans-serif;
+
+}
+img[data-src] {
+    opacity: 0; /* Initially hide images */
+    transition: opacity 0.3s ease;
+  }
+  
+  img[data-src].loaded {
+    opacity: 1; /* Fade in images when loaded */
+  }
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('path/to/your/font.woff2') format('woff2'),
+       url('path/to/your/font.woff') format('woff');
+  font-display: swap;
+}  
+/* styles for navigation*/
+/* working on navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    width: 40%;
+}
+
+.nav-links {
+    display: none;
+    list-style: none;
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.nav-links a:hover {
+    background-color: yellowgreen;
+}
+.link-wrapper a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: -40px;
+}
+/* Styles for the button */
+.toggle {
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 40px;
+  }
+  
+  /* Styles for the icon */
+  .toggle i {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    animation: rotate 2s linear infinite, bounce 3s ease infinite;
+  }
+  
+  /* Animation for rotation */
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(60deg);
+    }
+  }
+  
+  /* Animation for bounce */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  
+.fa-facebook {
+    font-size: 4rem;
+    margin-left: 4rem;
+    color: blue;
+    text-align: center;
+}
+
+.fa-instagram {
+    font-size: 4rem;
+    margin-left: 4.5rem;
+    color: red;
+    text-align: center;
+}
+
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero video {
+    display: none;
+}
+
+.hero-content h1 {
+    position: absolute;
+    left: 10%;
+    top: 1%;
+    color: #fff;
+    width: 80%;
+    font-size: 4rem;
+    background-color: black;
+    opacity: 80%;
+    text-align: center;
+}
+
+
+.about {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid white;
+   
+    text-align: center;
+
+}
+
+.about img {
+    width: 80%;
+}
+
+.about h2 {
+    font-size: 3rem;
+    color: white;
+
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.5rem;
+    color: black;
+    width: 100%;
+}
+
+/* Styling for the services section */
+.services {
+    text-align: center;
+}
+.service-content img{
+    width: 20%;
+}
+
+.service-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+
+.service-content h2 {
+    font-size: 3rem;
+    color: white;
+    margin-right: 5%;
+}
+
+.service-content p {
+    font-size: 1.5rem;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.main-Service {
+    display: block;
+    text-align: center;
+    border-top: 2px solid black;
+
+}
+
+.main-Service h2 {
+    font-size: 3rem;
+    margin-top: 40px;
+    color: white;
+}
+
+.main-Service p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.services-container {
+    display: grid;
+    grid-gap: 10px;
+    /* Adjust the gap between items */
+    margin-top: 1px;
+    text-align: center; 
+}
+
+.service-wrapper {
+    margin-top: 50px;
+    background-image: url('images/NMAS.png');
+    background-repeat: no-repeat;
+    padding: 45%;
+    text-align: center;
+    background-position: center;
+    color: white;
+}
+
+.service-wrapper h3 {
+    font-size: 3rem;
+    width: 50%;
+    cursor: pointer;
+    border: 1px solid black;
+    position: absolute;
+    left: 40%;
+    background-color: black;
+
+}
+
+
+.service-wrapper h3:hover {
+    background-color: #be1d1d;
+}
+
+.service-wrapper-one {
+    margin-top: 50px;
+    background-image: url('images/Accounting.jpeg');
+    background-repeat: no-repeat;
+    padding: 45%;
+    text-align: center;
+    background-position: center;
+    color: white;
+}
+
+.service-wrapper-one h3 {
+    font-size: 3rem;
+    width: 40%;
+    cursor: pointer;
+    border: 1px solid white;
+    position: absolute;
+    left: 38%;
+    background-color: black;
+
+
+}
+
+
+.service-wrapper-one h3:hover {
+    background-color: #be1d1d;
+}
+
+
+.service-wrapper-two {
+    margin-top: 50px;
+    background-image: url('images/tax.png');
+    background-repeat: no-repeat;
+    padding: 45%;
+    text-align: center;
+    background-position: center;
+    color: white;
+}
+
+.service-wrapper-two h3 {
+    font-size: 3rem;
+    width: 40%;
+    cursor: pointer;
+    border: 1px solid white;
+    position: absolute;
+    left: 40%;
+    background-color: black;
+
+
+}
+
+
+.service-wrapper-two h3:hover {
+    background-color: #be1d1d;
+}
+
+.service-wrapper-two h3:active {
+    transform: translateY(1px);
+}
+
+.services a {
+    text-decoration: none;
+    color: white;
+}
+
+.services a:hover {
+    background-color: yellowgreen;
+}
+
+.contact {
+    padding: 20px;
+    color: black;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+    font-size: 80%;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: darkgreen;
+}
+
+.contact p {
+    font-size: 2rem;
+}
+
+article {
+    margin-bottom: 15px;
+}
+
+article h3 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+article p {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+    font-size: 3rem;
+    border: 4px solid darkgoldenrod;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: lightsteelblue;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 2.4rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 2.2rem;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+/* Footer styles */
+
+footer {
+    background-color: lightslategray;
+    padding: 20px;
+
+}
+
+footer img {
+    width: 60%;
+    margin-top: 30px;
+margin-left: 65px;
+}
+
+.contacts {
+    display: block;
+    background-color: lightslategray;
+    text-align: center;
+}
+
+.contacts-details {
+    flex-basis: 45%;
+    padding-right: 20px;
+    /* Adjust spacing between contact details and map */
+    margin-top: 40px;
+}
+
+.contacts-details h2 {
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+
+.contacts-details article {
+    margin-bottom: 15px;
+}
+
+.contacts-details article a {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    color: black;
+}
+
+.contacts-details p {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 2rem;
+}
+
+.social-links a {
+    margin-right: 10px;
+    /* Adjust spacing between social media icons */
+}
+
+.appointment {
+    margin-top: 15px;
+}
+
+.appointment a {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #45a049;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 2rem;
+}
+
+.appointment a:hover {
+    background-color: black;
+}
+
+.disclaimer {
+    font-size: 2rem;
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.map {
+    margin-top: 20px;
+    display: flex;
+}
+
+/* for services page*/
+/* Section containing services */
+.services-wrapper {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.service-one li {
+    border-collapse:collapse;
+    width: 100%;
+
+}
+
+/* Individual service */
+.service-one th {
+    border: 1px solid white;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.service-one tr {
+    border: 1px solid white;
+}
+
+/* Service links */
+.service-one a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-size: 2rem;
+}
+
+
+.service-one td {
+    border: 1px solid white;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.coint {
+    text-align: center;
+    border-top: 2px solid black;
+}
+
+/* "Book Appointment" button */
+.container-wrapper a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 1%;
+    margin-bottom: 10px;
+}
+
+.container-wrapper a:hover {
+    background-color: black;
+}
+
+/*for about page
+-
+-
+*/
+
+
+.card {
+    display: grid;
+    grid-template-columns: repeat( minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.card-wrapper {
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: lightgray;
+    color: black;
+}
+
+
+/* Initial styling for the image */
+.card-wrapper img {
+    width: 65%;
+  }
+  
+  /* Keyframes for rotation animation */
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg) scaleX(1); /* Initial rotation and flip */
+    }
+    to {
+      transform: rotate(20deg) scaleX(1); /* Continuous rotation and flip */
+    }
+  }
+  
+.card-wrapper h2 {
+    font-size: 4rem;
+    color: darkred;
+    animation: rotateAnimation 8s linear infinite; /* Rotate continuously */
+}
+
+.card-wrapper:hover {
+    background-color: black;
+    color: silver;
+}
+
+.card-wrapper p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+
+/* Media query for larger desktop screens */
+@media (min-width: 768px) {
+
+header{
+    max-width: 1170px;
+    margin: auto;
+}
+    .navbar {
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    .navbar img {
+        width: 20%;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        margin: auto;
+    }
+
+    .nav-links li {
+        margin-right:  40px;;
+        /* Add some space between the list items */
+    }
+
+    .nav-links a {
+        margin-left: 40px;
+
+    }
+
+.toggle i{
+    display: none;
+}
+
+   
+.hero{
+    max-width: 1170px;
+    margin: auto;
+}
+    .hero img {
+        display: none;
+    }
+
+    .hero video {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .hero-content h1 {
+        font-size: 7rem;
+        width: 60%;
+        opacity: 70%;
+        top: 50%; 
+        left: 20%;
+
+    }
+.about{
+    max-width: 1170px;
+    margin: auto;
+}
+    .about h2 {
+        font-size: 4rem;
+    }
+
+    .about p {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+.services{
+    max-width: 1170px;
+    margin: auto;
+}
+.main-Service{
+    max-width: 1170px;
+    margin: auto;
+}
+.services-container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+    footer {
+        font-size: 4rem;
+        max-width: 1170px;
+        margin: auto;
+        background-color: lightslategray;
+    }
+
+    /* starting styling for services */
+    
+
+    .service-content h2 {
+        font-size: 4rem;
+        color: white;
+
+    }
+
+    .main-Service {
+        max-width: 1170px;
+        margin: auto;
+        margin-top: 50px;
+
+    }
+
+    .services-container {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 50px;
+    }
+
+
+    .service-wrapper h3 {
+        font-size: 2.5rem;
+        width: fit-content;
+        padding: 5px;
+        transition: all 3s ease;
+        position:relative;
+        left: 1%;
+        border-radius: 10px;
+
+
+    }
+
+
+    .service-wrapper h3:hover {
+        font-size: 3rem;
+    }
+
+
+    .service-wrapper-one {
+        padding: 40%;
+    }
+
+    .service-wrapper-one h3 {
+        font-size: 2.5rem;
+        width:fit-content;
+        padding: 5px;
+        position: relative;
+        left: 3%;
+        border-radius: 10px;
+        transition: all 3s ease;
+  }
+
+    .service-wrapper-one h3:hover {
+        font-size: 3rem;
+    }
+
+    .service-wrapper-two {
+        padding: 40%;
+        
+    }
+
+    .service-wrapper-two h3 {
+        font-size: 2.5rem;
+        width: fit-content;
+      
+        padding: 5px;
+        position: relative;
+        left: 1%;
+        border-radius: 10px;
+        transition: all 3s ease;
+
+
+    }
+
+
+    .service-wrapper-two h3:hover {
+        font-size: 3rem;
+    }
+
+
+    .contact {
+        max-width: 1170px;
+        text-align: center;
+        margin: auto;
+
+    }
+
+    .coint {
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    .container-wrapper {
+        font-size: 2rem;
+    }
+
+    footer {
+        text-align: center;
+        max-width: 1170px;
+        margin: auto;
+
+    }
+
+    footer p {
+        font-size: 2rem;
+    }
+
+    footer img {
+        margin-top: 20px;
+        width: 50%;
+    }
+
+    .contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+
+    .contacts-details article {
+        margin-top: 15px;
+    }
+
+    .contacts-details h3 {
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .contacts-details p {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+
+    .appointment {
+        margin-bottom: 15px;
+    }
+
+    .appointment a {
+        padding: 10px 20px;
+       
+    }
+    .appointment a:hover {
+        background-color: black;
+    }
+
+    .map {
+        margin-top: 80px;
+        margin-right: 50px;
+    }
+
+
+    /* contact us page----
+    --------
+    ----
+    */
+
+
+    label {
+        font-size: 2rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 2rem;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* for about page*/
+    .card {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+        margin-top: 80px;
+        max-width: 1170px;
+        margin: auto;
+
+
+    }
+
+    .card-wrapper {
+        border: 2px solid red;
+        padding: 20px;
+        border-radius: 70px;
+        background-color: lightgray;
+        color: black;
+    }
+
+    .card-wrapper img {
+        width: 100%;
+    }
+
+    .card-wrapper h2 {
+        font-size: 4rem;
+        color: darkred;
+    }
+
+    .card-wrapper p {
+        font-size: 1.5rem;
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    .card-wrapper:hover {
+        background-color: black;
+        color: silver;
+        opacity: 70%;
+    }
+
+    /*for service page*/
+    .services-wrapper {
+        padding: 20px;
+        max-width: 1170px;
+        margin: auto;
+
+    }
+
+    /* Individual service */
+    .service-one th {
+        padding: 8px;
+        font-size: 3.5rem;
+    }
+
+    /* Service links */
+    .service-one a {
+        padding: 10px;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+
+    .service-one td {
+        text-align: center;
+        padding: 8px;
+        font-size: 2rem;
+    }
+
+}

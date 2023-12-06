@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole Cahoon CPA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:ital@1&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!--Dgl CvS1-Umesh pathak-->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/cropped-NC_logo_INC_white_June_2016-03.jpg" alt="company logo">
+            <div class="link-wrapper">
+                <a class="toggle" href="#" onclick="toggleMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+                <ul class="nav-links" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/home.jpg" alt="Accounting">
+
+            <video autoplay muted loop playsinline>
+                <source src="images/video.mp4" type="video/mp4">
+            </video>
+
+            <div class="hero-content">
+                <h1>Welcome to Nicole Cahoon CPA</h1>
+            </div>
+        </section>
+        <section class="about">
+
+            <h2>Nicole Cahoon CPA</h2>
+            <div class="about-content">
+                <p>Nicole Cahoon, CPA provides small and mid-sized companies in Courtenay, Comox, Cumberland, and
+                    the
+                    surrounding municipalities in the Comox Valley with a comprehensive variety of accounting and
+                    bookkeeping services.</p>
+                <img src="images/picture.png" alt="photo">
+
+                <p>At Nicole Cahoon, CPA, we're dedicated to providing a range of services to satisfy our
+                    customers'
+                    needs while establishing an atmosphere that promotes both professional and personal
+                    development. Our
+                    commitment to delivering exceptional customer service is based on three fundamental
+                    principles:professionalism, timeliness, and quality. Small to medium-sized enterprises in the
+                    Comox
+                    Valley and its environs are our area of expertise.</p>
+            </div>
+        </section>
+        <section class="services">
+            <div class="service-content">
+                <h2><a href="services.html">Why Choose Us?</a></h2>
+                <img src="images/confuse" alt="choose us">
+            </div>
+            <div class="service-content">
+                <p>At Nicole Cahoon CPA, we stand out for our commitment to tailored accounting solutions that
+                    fit your
+                    business needs. Our comprehensive accounting services ensure precision and efficiency in
+                    financial
+                    management, from meticulous bookkeeping to intricate financial analysis. We offer expert
+                    business
+                    consulting aimed at enhancing your company's performance, encompassing strategic planning
+                    and
+                    process improvement to drive your business toward success. Additionally, our tax services
+                    cover
+                    planning and compliance, providing expertise to navigate tax regulations effectively and
+                    optimize
+                    your tax situation while ensuring full compliance and minimizing liabilities.</p>
+                <!--content written with the help of chatgpt-->
+            </div>
+        </section>
+        <section class="main-Service">
+            <h2>Our Services</h2>
+            <p>We provide three types of services which are Accounting service, Business consulting service
+                and Tax
+                service.
+            </p>
+            <p>To learn more about our services, check below.</p>
+        </section>
+        <section class="services-container">
+            <div class="service-wrapper">
+                <h3 onclick="navigateTo('services.html')"> Accounting Services</h3>
+            </div>
+            <div class="service-wrapper-one">
+                <h3 onclick="navigateTo('services.html')">Business Consulting Services</h3>
+            </div>
+            <div class="service-wrapper-two">
+                <h3 onclick="navigateTo('services.html')">Tax Services</h3>
+            </div>
+        </section>
+    </main>
+    <!-- Footer content -->
+    <footer>
+        <section class="contacts">
+            <div class="contacts-details">
+                <h2>Contact Us</h2>
+                <article>
+                    <h3><a href="mailto:nicole@nicolecahoon.com">Email: nicole@nicolecahoon.com</a></h3>
+                </article>
+                <article>
+                    <h3>Phone</h3>
+                    <p>+1 250-8711-121</p>
+                </article>
+                <article>
+                    <h3>Address</h3>
+                    <p>123 Main Street, Courtenay, Comox</p>
+                </article>
+                <p>Connect with us on social media:</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/nicolecahooninc"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/nicolecahooncpa?igshid=OGQ5ZDc2ODk2ZA=="><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p>Book your appointment:</p>
+                <div class="appointment">
+                    <a href="contact.html">Book Appointment</a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.4558460250582!2d-124.99089599999999!3d49.683388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881387ee557a91%3A0xf9df7ea74d2c4403!2sNicole%20Cahoon%2C%20Chartered%20Professional%20Accountant!5e0!3m2!1sen!2sca!4v1700549810622!5m2!1sen!2sca"
+                    width="400" height="300" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <img src="images/cropped-NC_logo_INC_white_June_2016-03.jpg" alt="company logo">
+        <div class="disclaimer">
+            <p><b>Note: This is a fictional website that was designed and coded as an educational exercise. It is not
+                    intended to
+                    be seen outside of the class environment. None of the content and images were approved by the
+                    business
+                    owner.</b></p>
+        </div>
+    </footer>
+</body>
+
+</html>

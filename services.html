@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:ital@1&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="images/cropped-NC_logo_INC_white_June_2016-03.jpg" alt="company logo">
+            <div class="link-wrapper">
+                <a class="toggle" onclick="toggleMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+                <ul class="nav-links" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/home.jpg" alt="Accounting">
+            <video autoplay muted loop playsinline>
+                <source src="images/video.mp4" type="video/mp4">
+            </video>
+
+            <div class="hero-content">
+                <h1>Services</h1>
+            </div>
+        </section>
+        <div class="services-wrapper">
+            <table class="service-one">
+                <tr>
+                    <th>Services</th>
+                    <th>Description</th>
+                    <th>Details</th>
+                </tr>
+                <tr class="service-one">
+                    <td><a href="services.html">Accounting Services</a></td>
+                    <td>We provide constructive solutions for maximizing your company’s profitability.</td>
+                    <td>
+                        <ul>
+                            <li>Corporate Year Ends - Financial Statement Preparation</li>
+                            <li>Corporate Tax Returns</li>
+                            <li>Canadian Tax Returns for Individuals</li>
+                            <li>Tax Planning</li>
+                            <li>Estate Planning</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="service-one">
+                    <td><a href="services.html">Business Consulting Services</a></td>
+                    <td>We can help your Comox Valley business identify areas that affect profitability and growth and
+                        we can
+                        develop solutions that are right for you.</td>
+                    <td>
+                        <ul>
+                            <li>Planning and Consulting</li>
+                            <li>Starting a Business</li>
+                            <li>Buying or Selling a Business</li>
+                            <li>Mergers and Acquisitions</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="service-one">
+                    <td><a href="services.html">Tax Services</a></td>
+                    <td>We can develop tax-minimization strategies for small and mid-sized Comox Valley businesses as
+                        well and
+                        personal, to optimize your after-tax position.</td>
+                    <td>
+                        <ul>
+                            <li>Bookkeeping and data entry</li>
+                            <li>Payroll services</li>
+                            <li>Federal and Provincial Sales Tax (GST, HST, PST)</li>
+                            <li>Computer Applications</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+    <footer> <!-- Footer content -->
+        <section class="coint">
+            <div>
+                <h3>Phone</h3>
+                <p>+1 250-8711-121</p>
+            </div>
+            <div>
+                <h3>Address</h3>
+                <p>123 Main Street, Courtenay, Comox</p>
+            </div>
+            <div class="container-wrapper">
+                <a href="contact.html" target="_blank">Book Appointment</a>
+            </div>
+        </section>
+        <img src="images/cropped-NC_logo_INC_white_June_2016-03.jpg" alt="company logo">
+
+        <div class="disclaimer">
+            <p><b>Note: This is a fictional website that was designed and coded as an educational exercise. It is not
+                    intended to
+                    be seen outside of the class environment. None of the content and images were approved by the
+                    business
+                    owner.</b></p>
+        </div>
+    </footer>
+</body>
+
+</html>
